@@ -1,5 +1,4 @@
 # server/app.py
-
 from flask import Flask
 from flask_migrate import Migrate
 
@@ -19,7 +18,6 @@ migrate = Migrate(app, db)
 
 # initialize the Flask application to use the database
 db.init_app(app)
-
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
